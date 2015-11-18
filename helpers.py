@@ -48,11 +48,7 @@ def get_file(full_path):
     if file_ext == '.zip':
         file = zipfile.ZipFile.open(file, file_path_no_ext)
     elif file_ext == '.rar':
-        print file_path_no_ext
-        print full_path
-        print file_name
-        print extensions[file_ext](full_path)
-        file = rarfile.RarFile.open(file, file_path_no_ext+'.csv')
+        file = rarfile.RarFile.open(file, file_path_no_ext)
 
     # print "Reading from file", file_name
     return file
