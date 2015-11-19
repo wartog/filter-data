@@ -1,10 +1,22 @@
-import sys
+import sys, os, click
 from _to_df import to_df
 
-if len(sys.argv) < 2:
-    sys.exit("Usage: filter.py csv_file.csv new_csv_file.csv")
 
-df = to_df(sys.argv[1])
-df = df[(df.Municipality_ID == 310620)]
+@click.command()
+@click.argument('file_path', type=click.Path(exists=True), required=True)
+@click.argument('output_path', type=click.Path(), required=True)
+def main(file_path, output_path):
 
-df.to_csv(open('./fout.csv', 'wb+'), sep=";", index=True, float_format="%.2f")
+    if not os.path.exists(output_path): os.makedirs(output_path)
+
+    df = to_df(sys.argv[1])
+    df = df[(df.Municipality_ID == 310620)]
+
+    new_file_path = os.path.abspath(os.path.join(output_path, "fout.csv"))
+    print new_file_path
+    df.to_csv(open(new_file_path, 'wb+'), sep=";", index=True, float_format="%.3f")
+
+if __name__ == "__main__":
+    main()
+
+
