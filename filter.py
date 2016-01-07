@@ -4,9 +4,7 @@ from _to_df import to_df
 
 '''
 USAGE EXAMPLE:
-
 python filter.py data/BH_2011.csv data/2011
-
 '''
 
 @click.command()
