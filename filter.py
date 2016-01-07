@@ -4,7 +4,7 @@ from _to_df import to_df
 
 '''
 USAGE EXAMPLE:
-python filter.py data/BH_2011.csv data/2011
+python filter.py data/MDIC_2015.csv data/2015
 '''
 
 @click.command()
@@ -23,7 +23,7 @@ def main(file_path, output_path):
 
     # Write output
     new_file_path = os.path.abspath(os.path.join(output_path, "fout.csv"))
-    data_frame.to_csv(open(new_file_path, 'wb+'), sep=";", index=False, float_format="%.3f")
+    data_frame.to_csv(open(new_file_path, 'wb+'), sep=";", index=False, float_format="%.3f", encoding="utf-8")
 
 if __name__ == "__main__":
     main()
