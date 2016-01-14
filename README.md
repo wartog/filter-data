@@ -34,7 +34,11 @@ export PATH="$PATH:$GRADLE_HOME/bin"
 
 ###Compilar
 
-    gradle build
+```bash
+gradle build
+```
 ###Rodar os testes
 
-    gradle test
+```bash
+gradle test
+```
