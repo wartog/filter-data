@@ -1,44 +1,22 @@
-# Reserva de Hotel
+#Examples for pandas
+Just a few examples to illustrate some explanation
 
-Esta aplicação contempla a solução do problema Reserva de Hotel:
+#Installation
 
-	Uma rede de hoteis operando em Belo Horizonte deseja oferecer serviços de reserva online.
-    Eles possuem três hotéis: The Carlyle, The Plaza e Royal Hotel.
-    Cada hotel tem preços diferentes durante a semana e final de semana.
-    Existem ainda preços diferenciados para clientes vip.
+1.  Clone from github (this will create dataviva folder in the current directory)
 
-### Instalação do ambiente
+        git clone https://github.com/diogolundberg/pandas-examples.git
+2.  [optional] Create a virtual environment. Install [virtualenv](https://pypi.python.org/pypi/virtualenv) with [virtualenvwrapper](http://virtualenvwrapper.readthedocs.org/en/latest/)
 
-1- O projeto utiliza java 1.7, portanto é precido o download do [jdk7](http://www.oracle.com/technetwork/pt/java/javase/downloads/jdk7-downloads-1880260.html) ou superior.
+    Once this is complete, run the following to initialize your dataviva environment.
 
-Adicione o diretório do java nas suas variáveis de ambiente
 
-```bash
-export JAVA_HOME=<caminho-para-o-java>
-```
-2- Clone do github (isso vai criar uma cópia do Reserva de Hotel no seu diretório atual)
+        mkvirtualenv dataviva
+        workon dataviva
+3.  Install the required Python libraries
 
-```bash
-git clone https://github.com/serenafernandes/reserva-hotel.git
-```
+        pip install -r requirements.txt
 
-3- Faça o download do [Gradle](https://services.gradle.org/distributions/gradle-2.10-bin.zip).
+4. Run the examples
 
-Descompacte o arquivo gradle-2.10-bin.zip.
-Adicione o local escolhido para o gradle nas variáveis de ambiente como GRADLE_HOME, colocando seu diretório bin no PATH
-
-```bash
-export GRADLE_HOME="<caminho-para-o-gradle>"
-export PATH="$PATH:$GRADLE_HOME/bin"
-```
-
-###Compilar
-
-```bash
-gradle build
-```
-###Rodar os testes
-
-```bash
-gradle test
-```
+        python example.py
