@@ -1,4 +1,3 @@
-# (GitHub-Flavored) Markdown Editor
 # Reserva de Hotel
 
 Esta aplicação contempla a solução do problema Reserva de Hotel:
