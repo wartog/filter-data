@@ -15,16 +15,21 @@ Esta aplicação contempla a solução do problema Reserva de Hotel:
     Adicione o diretório do java nas suas variáveis de ambiente
 
         export JAVA_HOME=<caminho-para-o-java>
-2.  Clone do github (isso vai criar uma cópia do Reserva de Hotel no seu diretório atual)
+2. Clone do github (isso vai criar uma cópia do Reserva de Hotel no seu diretório atual)
 
-        git clone https://github.com/serenafernandes/reserva-hotel.git
-3.  Faça o download do [Gradle](https://services.gradle.org/distributions/gradle-2.10-bin.zip).
+```bash
+git clone https://github.com/serenafernandes/reserva-hotel.git
+```
 
-    Descompacte o arquivo gradle-2.10-bin.zip.
-    Adicione o local escolhido para o gradle nas variáveis de ambiente como GRADLE_HOME, colocando seu diretório bin no PATH
+3. Faça o download do [Gradle](https://services.gradle.org/distributions/gradle-2.10-bin.zip).
 
-        export GRADLE_HOME="<caminho-para-o-gradle>"
-        export PATH="$PATH:$GRADLE_HOME/bin"
+Descompacte o arquivo gradle-2.10-bin.zip.
+Adicione o local escolhido para o gradle nas variáveis de ambiente como GRADLE_HOME, colocando seu diretório bin no PATH
+
+```bash
+export GRADLE_HOME="<caminho-para-o-gradle>"
+export PATH="$PATH:$GRADLE_HOME/bin"
+```
 
 ###Compilar
 
